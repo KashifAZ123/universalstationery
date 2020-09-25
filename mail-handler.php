@@ -7,9 +7,9 @@ if(isset($_POST['submit'])){
     $address = $_POST['address'];
     $subject = "Form submission";
     $city = $_POST['city'];
-    $ZipCode = $_POST['zip_code'];
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+    $zipcode = $_POST['zip_code'];
+    $message = $first_name . " " . $country . " wrote the following:" . "\n\n" . $_POST['address'];
+   
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
